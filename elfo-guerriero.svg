@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="elf-title">
+  <title id="elf-title">Elfo guerriero in armatura</title>
+  <defs>
+    <linearGradient id="elf-hair" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2b3c74"/>
+      <stop offset="0.5" stop-color="#162142"/>
+      <stop offset="1" stop-color="#0a0f22"/>
+    </linearGradient>
+    <radialGradient id="elf-skin" cx="760" cy="330" r="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f3cdb6"/>
+      <stop offset="0.6" stop-color="#d9a68c"/>
+      <stop offset="1" stop-color="#9c6b58"/>
+    </radialGradient>
+    <linearGradient id="elf-neck" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8e5f4e"/>
+      <stop offset="1" stop-color="#c79580"/>
+    </linearGradient>
+    <linearGradient id="elf-steel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9db6d6"/>
+      <stop offset="0.35" stop-color="#5a7499"/>
+      <stop offset="0.7" stop-color="#2f4466"/>
+      <stop offset="1" stop-color="#16213a"/>
+    </linearGradient>
+    <linearGradient id="elf-steel-light" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d4e2f3"/>
+      <stop offset="0.5" stop-color="#7d97bc"/>
+      <stop offset="1" stop-color="#2c3f61"/>
+    </linearGradient>
+    <linearGradient id="elf-gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f1dc9e"/>
+      <stop offset="0.5" stop-color="#b8954d"/>
+      <stop offset="1" stop-color="#6d5424"/>
+    </linearGradient>
+    <style>
+      .elf-plate { stroke: url(#elf-gold); stroke-width: 10; stroke-linejoin: round; }
+      .elf-shine { fill: none; stroke: #ffffff; stroke-linecap: round; opacity: 0.35; }
+      .elf-tattoo { fill: none; stroke: #3d63b0; stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; }
+      .elf-ink { fill: none; stroke: #1c2236; stroke-width: 4; stroke-linecap: round; opacity: 0.75; }
+      .elf-strand { fill: none; stroke: #5470c0; stroke-width: 3; stroke-linecap: round; opacity: 0.6; }
+    </style>
+  </defs>
+
+  <!-- Collo -->
+  <path d="M600,370 C592,445 560,500 500,545 L520,640 C610,650 700,625 765,565 L745,470 C705,505 660,500 640,470 Z" fill="url(#elf-neck)"/>
+  <path class="elf-ink" d="M560,470 C575,500 570,540 545,575 M585,500 C600,530 600,560 590,600 M640,520 C650,550 665,570 690,580 M610,560 l12,30 l-20,10"/>
+  <path d="M640,470 C680,505 720,505 745,470 L752,500 C715,530 670,525 640,470 Z" fill="#5a3a30" opacity="0.5"/>
+
+  <!-- Lato rasato (undercut) -->
+  <path d="M598,140 C586,190 585,250 598,310 L640,300 C632,250 642,200 690,165 Z" fill="#4b4f5c"/>
+  <path d="M598,140 C586,190 585,250 598,310 L640,300 C632,250 642,200 690,165 Z" fill="url(#elf-skin)" opacity="0.25"/>
+
+  <!-- Orecchio a punta con piercing -->
+  <path d="M614,228 C590,212 560,198 526,182 C540,215 558,250 572,282 C580,308 590,332 606,342 C618,320 620,270 614,228 Z" fill="url(#elf-skin)"/>
+  <path d="M600,240 C585,232 570,226 556,220 C566,245 578,270 586,300" fill="none" stroke="#8e5a48" stroke-width="4" stroke-linecap="round"/>
+  <g fill="#b9c2d6" stroke="#2a2f3e" stroke-width="2">
+    <circle cx="540" cy="226" r="5"/>
+    <circle cx="546" cy="248" r="5"/>
+    <circle cx="553" cy="274" r="5"/>
+    <circle cx="563" cy="300" r="5"/>
+    <circle cx="578" cy="326" r="6"/>
+  </g>
+  <path d="M578,332 L574,420" stroke="#8d96ab" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Viso -->
+  <path d="M612,205 C650,175 720,165 790,180 C850,195 885,240 885,300 C885,350 870,395 845,428 C815,466 780,494 745,505 C715,512 680,500 655,475 C625,445 600,410 595,360 C592,300 595,240 612,205 Z" fill="url(#elf-skin)"/>
+  <!-- ombra della mascella -->
+  <path d="M600,360 C605,410 630,450 660,478 C690,503 720,508 745,505 C700,495 660,470 635,430 C615,400 605,375 600,360 Z" fill="#7a4c3e" opacity="0.35"/>
+
+  <!-- Tatuaggio sulla guancia -->
+  <g class="elf-tattoo">
+    <path d="M626,318 L628,412"/>
+    <path d="M648,326 C648,368 652,402 668,432"/>
+    <path d="M670,330 C668,362 682,382 704,378"/>
+    <path d="M612,350 C622,382 642,396 668,396"/>
+    <path d="M684,346 L706,356"/>
+  </g>
+
+  <!-- Sopracciglia -->
+  <path d="M698,302 C728,284 770,282 798,298 C770,293 730,296 700,310 Z" fill="#141a2e"/>
+  <path d="M822,330 C845,318 868,322 884,336 C865,330 845,331 824,338 Z" fill="#141a2e"/>
+  <!-- Occhi -->
+  <path d="M714,340 C730,324 762,321 780,334 C762,348 734,350 714,340 Z" fill="#f2ece6"/>
+  <circle cx="752" cy="336" r="10" fill="#3f6fb8"/>
+  <circle cx="752" cy="336" r="4.5" fill="#0d1220"/>
+  <circle cx="756" cy="332" r="2" fill="#ffffff"/>
+  <path d="M712,340 C730,322 764,318 784,334" fill="none" stroke="#2a1d1a" stroke-width="4" stroke-linecap="round"/>
+  <path d="M826,368 C838,357 856,357 866,366 C853,376 838,377 826,368 Z" fill="#f2ece6"/>
+  <circle cx="847" cy="366" r="8" fill="#3f6fb8"/>
+  <circle cx="847" cy="366" r="3.5" fill="#0d1220"/>
+  <path d="M824,368 C838,354 858,354 868,364" fill="none" stroke="#2a1d1a" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Naso -->
+  <path d="M800,332 C806,370 818,404 808,428 C798,440 780,441 770,432" fill="none" stroke="#9a6553" stroke-width="4" stroke-linecap="round"/>
+  <path d="M808,340 C814,375 826,402 818,424" fill="none" stroke="#fbe1d2" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Bocca (sorriso accennato) -->
+  <path d="M708,468 C728,480 752,478 774,464" fill="none" stroke="#7d3f3b" stroke-width="4" stroke-linecap="round"/>
+  <path d="M722,482 C738,490 756,488 768,478" fill="none" stroke="#b5706a" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Capelli -->
+  <path d="M584,152 C590,80 650,25 740,14 C830,6 920,40 960,110 C992,172 986,262 950,332 C930,382 905,422 878,452 C890,392 886,322 862,272 C822,222 760,202 700,196 C660,194 622,186 600,172 Z" fill="url(#elf-hair)"/>
+  <path d="M860,270 C890,320 900,380 878,452 C905,420 925,390 935,350 C915,320 892,290 860,270 Z" fill="#1d2b58"/>
+  <g class="elf-strand">
+    <path d="M610,150 C660,90 740,60 830,70"/>
+    <path d="M630,170 C690,120 780,100 880,120"/>
+    <path d="M670,185 C740,150 840,150 920,200"/>
+    <path d="M720,40 C800,30 880,50 935,110"/>
+    <path d="M880,230 C915,290 920,360 900,420"/>
+    <path d="M905,200 C945,260 948,330 925,380"/>
+  </g>
+  <path d="M600,172 C640,190 680,195 700,196" fill="none" stroke="#b6bccb" stroke-width="2" opacity="0.5"/>
+
+  <!-- Braccio (pelle sotto lo spallaccio) -->
+  <path d="M320,690 C400,710 455,780 470,880 L462,1024 L320,1024 Z" fill="#a8735f"/>
+  <path class="elf-ink" d="M360,960 C380,930 410,930 430,960 M350,1000 C380,975 420,975 445,1000"/>
+
+  <!-- Spallaccio destro (lato dello spettatore a destra) -->
+  <path class="elf-plate" d="M760,652 C842,640 902,690 912,760 L922,900 L862,942 L792,880 L722,700 Z" fill="url(#elf-steel)"/>
+  <path class="elf-plate" d="M842,760 L930,790 L930,850 L850,820 Z" fill="url(#elf-steel)"/>
+
+  <!-- Pettorale -->
+  <path class="elf-plate" d="M470,650 L680,640 L722,700 L702,760 L782,900 L762,1030 L470,1030 C458,900 450,760 470,650 Z" fill="url(#elf-steel)"/>
+  <path class="elf-shine" stroke-width="10" d="M500,700 C530,690 570,690 610,700"/>
+  <path class="elf-shine" stroke-width="5" d="M495,740 C520,800 525,880 515,960"/>
+
+  <!-- Emblema a stella -->
+  <path class="elf-plate" d="M705,708 L726,798 L772,818 L726,836 L705,944 L684,836 L638,818 L684,798 Z" fill="url(#elf-steel-light)"/>
+  <path d="M705,708 L705,944 M638,818 L772,818" stroke="#1c2a46" stroke-width="2" opacity="0.6"/>
+
+  <!-- Colletto -->
+  <path class="elf-plate" d="M720,560 C760,560 792,600 802,642 L742,702 L702,642 Z" fill="url(#elf-steel)"/>
+  <path class="elf-plate" d="M430,412 C472,392 522,402 562,442 L652,562 L622,702 C562,642 482,592 402,562 C412,502 420,452 430,412 Z" fill="url(#elf-steel)"/>
+  <path class="elf-shine" stroke-width="8" d="M450,440 C500,450 540,490 580,550"/>
+
+  <!-- Spallaccio sinistro a lamelle -->
+  <path class="elf-plate" d="M72,944 C172,884 282,872 384,902 L372,984 C272,954 172,964 82,1030 Z" fill="url(#elf-steel)"/>
+  <path class="elf-plate" d="M68,852 C168,792 288,782 402,812 L402,884 C292,852 180,862 68,922 Z" fill="url(#elf-steel)"/>
+  <path class="elf-plate" d="M78,762 C178,702 302,692 422,722 L422,792 C302,762 180,772 70,832 Z" fill="url(#elf-steel)"/>
+  <path class="elf-plate" d="M100,652 C150,582 262,532 382,532 C432,542 462,582 472,642 L472,722 C382,682 262,682 160,742 Z" fill="url(#elf-steel)"/>
+  <path class="elf-shine" stroke-width="12" d="M150,640 C220,580 300,560 380,565"/>
+  <path class="elf-shine" stroke-width="6" d="M110,780 C180,740 260,728 340,735"/>
+  <path class="elf-shine" stroke-width="6" d="M100,870 C170,830 250,820 330,826"/>
+</svg>
