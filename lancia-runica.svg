@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" role="img" aria-labelledby="spear-title">
+  <title id="spear-title">Lancia runica</title>
+  <defs>
+    <!-- Asta: legno scuro con riflesso bronzeo -->
+    <linearGradient id="spear-shaft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8a6a3c"/>
+      <stop offset="0.35" stop-color="#4a3820"/>
+      <stop offset="0.7" stop-color="#21180e"/>
+      <stop offset="1" stop-color="#0e0a06"/>
+    </linearGradient>
+    <!-- Metallo nero del puntale e del collare -->
+    <linearGradient id="spear-iron" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5a5f70"/>
+      <stop offset="0.4" stop-color="#23252e"/>
+      <stop offset="1" stop-color="#08090c"/>
+    </linearGradient>
+    <linearGradient id="spear-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f3d58c"/>
+      <stop offset="0.5" stop-color="#c49a4a"/>
+      <stop offset="1" stop-color="#6e5222"/>
+    </linearGradient>
+    <!-- Lama di cristallo luminoso -->
+    <linearGradient id="spear-blade-top" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9fb4ff"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="spear-blade-bottom" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c9d4ff"/>
+      <stop offset="1" stop-color="#5a6fe0"/>
+    </linearGradient>
+    <radialGradient id="spear-aura" cx="960" cy="150" r="170" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8fa2ff" stop-opacity="0.45"/>
+      <stop offset="0.6" stop-color="#5b5be0" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#3b2fa0" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="spear-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="b1"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="b2"/>
+      <feMerge>
+        <feMergeNode in="b2"/>
+        <feMergeNode in="b1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .spear-ring { fill: none; stroke: #d6dcff; }
+      .spear-runes path { fill: none; stroke: #eef1ff; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+      .spear-spark { fill: #ffffff; }
+      .spear-ribbon path { fill: none; stroke-linecap: round; }
+    </style>
+  </defs>
+
+  <!-- Aura del sigillo -->
+  <circle cx="960" cy="150" r="170" fill="url(#spear-aura)"/>
+
+  <!-- Nastro: parte dietro l'asta -->
+  <g class="spear-ribbon" stroke="#5a4120" stroke-width="5">
+      <path d="M637.5,140.9 L639.4,141.0 L641.2,141.3 L643.1,141.8 L645.0,142.5 L646.9,143.4 L648.8,144.5 L650.6,145.7 L652.5,147.1 L654.4,148.5 L656.2,150.0 L658.1,151.5 L660.0,153.0 L661.9,154.4 L663.8,155.7 L665.6,156.9 L667.5,157.9 L669.4,158.7 L671.2,159.4 L673.1,159.8 L675.0,159.9"/>
+      <path d="M712.5,139.2 L714.4,139.3 L716.2,139.7 L718.1,140.3 L720.0,141.1 L721.9,142.2 L723.8,143.5 L725.6,145.0 L727.5,146.6 L729.4,148.3 L731.2,150.0 L733.1,151.8 L735.0,153.5 L736.9,155.1 L738.8,156.7 L740.6,158.1 L742.5,159.3 L744.4,160.2 L746.2,161.0 L748.1,161.4 L750.0,161.6"/>
+      <path d="M787.5,137.5 L789.4,137.6 L791.2,138.1 L793.1,138.8 L795.0,139.8 L796.9,141.0 L798.8,142.5 L800.6,144.2 L802.5,146.0 L804.4,148.0 L806.2,150.0 L808.1,152.0 L810.0,154.0 L811.9,155.9 L813.8,157.7 L815.6,159.3 L817.5,160.6 L819.4,161.7 L821.2,162.6 L823.1,163.1 L825.0,163.3"/>
+      <path d="M862.5,135.8 L864.4,136.0 L866.2,136.5 L868.1,137.3 L870.0,138.4 L871.9,139.8 L873.8,141.5 L875.6,143.4 L877.5,145.5 L879.4,147.7 L881.2,150.0 L883.1,152.3 L885.0,154.5 L886.9,156.7 L888.8,158.7 L890.6,160.5 L892.5,162.0 L894.4,163.3 L896.2,164.2 L898.1,164.8 L900.0,165.0"/>
+  </g>
+
+  <!-- Asta -->
+  <rect x="58" y="144" width="842" height="12" rx="3" fill="url(#spear-shaft)"/>
+  <rect x="58" y="145" width="842" height="2" fill="#c9a66a" opacity="0.35"/>
+
+  <!-- Puntale posteriore -->
+  <g>
+    <rect x="44" y="142" width="22" height="16" rx="2" fill="url(#spear-iron)"/>
+    <rect x="62" y="141" width="4" height="18" fill="url(#spear-gold)"/>
+    <path d="M44,143 L20,147 L8,150 L20,153 L44,157 Z" fill="url(#spear-iron)"/>
+    <path d="M44,143 L20,147 L8,150 Z" fill="#6a7088" opacity="0.5"/>
+  </g>
+
+  <!-- Nastro: parte davanti all'asta -->
+  <g class="spear-ribbon">
+    <g stroke="#3a2a12" stroke-width="7" opacity="0.6">
+      <path d="M600.0,158.2 L601.9,158.2 L603.8,157.9 L605.6,157.5 L607.5,156.8 L609.4,156.0 L611.2,155.0 L613.1,153.9 L615.0,152.7 L616.9,151.3 L618.8,150.0 L620.6,148.6 L622.5,147.3 L624.4,146.0 L626.2,144.8 L628.1,143.7 L630.0,142.8 L631.9,142.0 L633.8,141.4 L635.6,141.1 L637.5,140.9"/>
+      <path d="M675.0,159.9 L676.9,159.9 L678.8,159.5 L680.6,159.0 L682.5,158.2 L684.4,157.2 L686.2,156.0 L688.1,154.6 L690.0,153.2 L691.9,151.6 L693.8,150.0 L695.6,148.4 L697.5,146.8 L699.4,145.2 L701.2,143.8 L703.1,142.5 L705.0,141.4 L706.9,140.5 L708.8,139.8 L710.6,139.4 L712.5,139.2"/>
+      <path d="M750.0,161.6 L751.9,161.5 L753.8,161.1 L755.6,160.5 L757.5,159.5 L759.4,158.4 L761.2,157.0 L763.1,155.4 L765.0,153.7 L766.9,151.9 L768.8,150.0 L770.6,148.1 L772.5,146.3 L774.4,144.5 L776.2,142.8 L778.1,141.3 L780.0,140.0 L781.9,139.0 L783.8,138.2 L785.6,137.7 L787.5,137.5"/>
+      <path d="M825.0,163.3 L826.9,163.2 L828.8,162.7 L830.6,162.0 L832.5,160.9 L834.4,159.6 L836.2,158.0 L838.1,156.2 L840.0,154.2 L841.9,152.1 L843.8,150.0 L845.6,147.8 L847.5,145.7 L849.4,143.7 L851.2,141.8 L853.1,140.1 L855.0,138.7 L856.9,137.5 L858.8,136.6 L860.6,136.1 L862.5,135.8"/>
+    </g>
+    <g stroke="url(#spear-gold)" stroke-width="5">
+      <path d="M600.0,158.2 L601.9,158.2 L603.8,157.9 L605.6,157.5 L607.5,156.8 L609.4,156.0 L611.2,155.0 L613.1,153.9 L615.0,152.7 L616.9,151.3 L618.8,150.0 L620.6,148.6 L622.5,147.3 L624.4,146.0 L626.2,144.8 L628.1,143.7 L630.0,142.8 L631.9,142.0 L633.8,141.4 L635.6,141.1 L637.5,140.9"/>
+      <path d="M675.0,159.9 L676.9,159.9 L678.8,159.5 L680.6,159.0 L682.5,158.2 L684.4,157.2 L686.2,156.0 L688.1,154.6 L690.0,153.2 L691.9,151.6 L693.8,150.0 L695.6,148.4 L697.5,146.8 L699.4,145.2 L701.2,143.8 L703.1,142.5 L705.0,141.4 L706.9,140.5 L708.8,139.8 L710.6,139.4 L712.5,139.2"/>
+      <path d="M750.0,161.6 L751.9,161.5 L753.8,161.1 L755.6,160.5 L757.5,159.5 L759.4,158.4 L761.2,157.0 L763.1,155.4 L765.0,153.7 L766.9,151.9 L768.8,150.0 L770.6,148.1 L772.5,146.3 L774.4,144.5 L776.2,142.8 L778.1,141.3 L780.0,140.0 L781.9,139.0 L783.8,138.2 L785.6,137.7 L787.5,137.5"/>
+      <path d="M825.0,163.3 L826.9,163.2 L828.8,162.7 L830.6,162.0 L832.5,160.9 L834.4,159.6 L836.2,158.0 L838.1,156.2 L840.0,154.2 L841.9,152.1 L843.8,150.0 L845.6,147.8 L847.5,145.7 L849.4,143.7 L851.2,141.8 L853.1,140.1 L855.0,138.7 L856.9,137.5 L858.8,136.6 L860.6,136.1 L862.5,135.8"/>
+    </g>
+    <g stroke="#fff1c4" stroke-width="1.2" opacity="0.7">
+      <path d="M600.0,158.2 L601.9,158.2 L603.8,157.9 L605.6,157.5 L607.5,156.8 L609.4,156.0 L611.2,155.0 L613.1,153.9 L615.0,152.7 L616.9,151.3 L618.8,150.0 L620.6,148.6 L622.5,147.3 L624.4,146.0 L626.2,144.8 L628.1,143.7 L630.0,142.8 L631.9,142.0 L633.8,141.4 L635.6,141.1 L637.5,140.9"/>
+      <path d="M675.0,159.9 L676.9,159.9 L678.8,159.5 L680.6,159.0 L682.5,158.2 L684.4,157.2 L686.2,156.0 L688.1,154.6 L690.0,153.2 L691.9,151.6 L693.8,150.0 L695.6,148.4 L697.5,146.8 L699.4,145.2 L701.2,143.8 L703.1,142.5 L705.0,141.4 L706.9,140.5 L708.8,139.8 L710.6,139.4 L712.5,139.2"/>
+      <path d="M750.0,161.6 L751.9,161.5 L753.8,161.1 L755.6,160.5 L757.5,159.5 L759.4,158.4 L761.2,157.0 L763.1,155.4 L765.0,153.7 L766.9,151.9 L768.8,150.0 L770.6,148.1 L772.5,146.3 L774.4,144.5 L776.2,142.8 L778.1,141.3 L780.0,140.0 L781.9,139.0 L783.8,138.2 L785.6,137.7 L787.5,137.5"/>
+      <path d="M825.0,163.3 L826.9,163.2 L828.8,162.7 L830.6,162.0 L832.5,160.9 L834.4,159.6 L836.2,158.0 L838.1,156.2 L840.0,154.2 L841.9,152.1 L843.8,150.0 L845.6,147.8 L847.5,145.7 L849.4,143.7 L851.2,141.8 L853.1,140.1 L855.0,138.7 L856.9,137.5 L858.8,136.6 L860.6,136.1 L862.5,135.8"/>
+    </g>
+  </g>
+
+  <!-- Sigillo runico -->
+  <g filter="url(#spear-glow)">
+    <circle class="spear-ring" cx="960" cy="150" r="128" stroke-width="2.2"/>
+    <circle class="spear-ring" cx="960" cy="150" r="122" stroke-width="0.8" opacity="0.7"/>
+    <circle class="spear-ring" cx="960" cy="150" r="98" stroke-width="1.6"/>
+    <circle class="spear-ring" cx="960" cy="150" r="92" stroke-width="0.8" opacity="0.6"/>
+    <path class="spear-ring" d="M1057.2,162.8 L1081.0,165.9 M1050.5,187.5 L1072.7,196.7 M1037.7,209.7 L1056.8,224.3 M1019.7,227.7 L1034.3,246.8 M997.5,240.5 L1006.7,262.7 M972.8,247.2 L975.9,271.0 M947.2,247.2 L944.1,271.0 M922.5,240.5 L913.3,262.7 M900.3,227.7 L885.7,246.8 M882.3,209.7 L863.2,224.3 M869.5,187.5 L847.3,196.7 M862.8,162.8 L839.0,165.9 M862.8,137.2 L839.0,134.1 M869.5,112.5 L847.3,103.3 M882.3,90.3 L863.2,75.7 M900.3,72.3 L885.7,53.2 M922.5,59.5 L913.3,37.3 M947.2,52.8 L944.1,29.0 M972.8,52.8 L975.9,29.0 M997.5,59.5 L1006.7,37.3 M1019.7,72.3 L1034.3,53.2 M1037.7,90.3 L1056.8,75.7 M1050.5,112.5 L1072.7,103.3 M1057.2,137.2 L1081.0,134.1" stroke-width="0.8" opacity="0.5"/>
+    <g class="spear-runes">
+      <path d="M0,-8 V8 M0,-8 L5,-4 M0,-2 L5,-6" transform="translate(1070.0,150.0) rotate(90.0)"/>
+      <path d="M-3,-8 V8 M3,-8 V8 M-3,-3 L3,3" transform="translate(1066.3,178.5) rotate(105.0)"/>
+      <path d="M0,8 V-8 M0,-8 L-4,-4 M0,-8 L4,-4" transform="translate(1055.3,205.0) rotate(120.0)"/>
+      <path d="M-2,-8 V8 M-2,-8 L4,-3 M-2,-3 L4,2" transform="translate(1037.8,227.8) rotate(135.0)"/>
+      <path d="M-3,8 V-8 L3,-3 L-3,2" transform="translate(1015.0,245.3) rotate(150.0)"/>
+      <path d="M-3,8 V-8 L4,-3 V8" transform="translate(988.5,256.3) rotate(165.0)"/>
+      <path d="M0,-8 V8 M-4,-3 L4,3" transform="translate(960.0,260.0) rotate(180.0)"/>
+      <path d="M-3,-8 V8 M-3,-8 L3,-4 L-3,0 L3,4 L-3,8" transform="translate(931.5,256.3) rotate(195.0)"/>
+      <path d="M-4,-8 L4,8 M4,-8 L-4,8" transform="translate(905.0,245.3) rotate(210.0)"/>
+      <path d="M-3,-8 L3,-2 L-3,4 M3,-8 V8" transform="translate(882.2,227.8) rotate(225.0)"/>
+      <path d="M-2,-8 V8 M-2,-4 L3,0 L-2,4" transform="translate(864.7,205.0) rotate(240.0)"/>
+      <path d="M-4,0 L0,-8 L4,0 L0,8 Z" transform="translate(853.7,178.5) rotate(255.0)"/>
+      <path d="M0,-8 V8 M0,-8 L5,-4 M0,-2 L5,-6" transform="translate(850.0,150.0) rotate(270.0)"/>
+      <path d="M-3,-8 V8 M3,-8 V8 M-3,-3 L3,3" transform="translate(853.7,121.5) rotate(285.0)"/>
+      <path d="M0,8 V-8 M0,-8 L-4,-4 M0,-8 L4,-4" transform="translate(864.7,95.0) rotate(300.0)"/>
+      <path d="M-2,-8 V8 M-2,-8 L4,-3 M-2,-3 L4,2" transform="translate(882.2,72.2) rotate(315.0)"/>
+      <path d="M-3,8 V-8 L3,-3 L-3,2" transform="translate(905.0,54.7) rotate(330.0)"/>
+      <path d="M-3,8 V-8 L4,-3 V8" transform="translate(931.5,43.7) rotate(345.0)"/>
+      <path d="M0,-8 V8 M-4,-3 L4,3" transform="translate(960.0,40.0) rotate(360.0)"/>
+      <path d="M-3,-8 V8 M-3,-8 L3,-4 L-3,0 L3,4 L-3,8" transform="translate(988.5,43.7) rotate(375.0)"/>
+      <path d="M-4,-8 L4,8 M4,-8 L-4,8" transform="translate(1015.0,54.7) rotate(390.0)"/>
+      <path d="M-3,-8 L3,-2 L-3,4 M3,-8 V8" transform="translate(1037.8,72.2) rotate(405.0)"/>
+      <path d="M-2,-8 V8 M-2,-4 L3,0 L-2,4" transform="translate(1055.3,95.0) rotate(420.0)"/>
+      <path d="M-4,0 L0,-8 L4,0 L0,8 Z" transform="translate(1066.3,121.5) rotate(435.0)"/>
+    </g>
+  </g>
+
+  <!-- Collare e innesto della lama -->
+  <g>
+    <rect x="888" y="141" width="26" height="18" rx="3" fill="url(#spear-iron)"/>
+    <rect x="890" y="140" width="4" height="20" fill="url(#spear-gold)"/>
+    <rect x="906" y="140" width="4" height="20" fill="url(#spear-gold)"/>
+    <!-- guardie a uncino -->
+    <path d="M912,143 C930,138 936,124 930,114 C944,126 940,140 924,147 Z" fill="url(#spear-gold)"/>
+    <path d="M912,157 C930,162 936,176 930,186 C944,174 940,160 924,153 Z" fill="url(#spear-gold)"/>
+  </g>
+
+  <!-- Lama di cristallo -->
+  <g filter="url(#spear-glow)">
+    <path d="M918,150 L948,126 L1000,136 L1190,150 Z" fill="url(#spear-blade-top)"/>
+    <path d="M918,150 L948,174 L1000,164 L1190,150 Z" fill="url(#spear-blade-bottom)"/>
+    <path d="M918,150 L1190,150" stroke="#ffffff" stroke-width="1.6"/>
+    <path d="M948,126 L960,150 L948,174" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.8"/>
+  </g>
+
+  <!-- Scintille -->
+  <g filter="url(#spear-glow)">
+    <path class="spear-spark" d="M1062,44 L1065.12,66.88 L1088,70 L1065.12,73.12 L1062,96 L1058.88,73.12 L1036,70 L1058.88,66.88 Z"/>
+    <path class="spear-spark" d="M858,218 L860.16,233.84 L876,236 L860.16,238.16 L858,254 L855.84,238.16 L840,236 L855.84,233.84 Z"/>
+    <path class="spear-spark" d="M1080,214 L1081.68,226.32 L1094,228 L1081.68,229.68 L1080,242 L1078.32,229.68 L1066,228 L1078.32,226.32 Z"/>
+    <path class="spear-spark" d="M866,56 L867.2,64.8 L876,66 L867.2,67.2 L866,76 L864.8,67.2 L856,66 L864.8,64.8 Z"/>
+    <path class="spear-spark" d="M1010,22 L1010.96,29.04 L1018,30 L1010.96,30.96 L1010,38 L1009.04,30.96 L1002,30 L1009.04,29.04 Z"/>
+    <path class="spear-spark" d="M930,265 L930.84,271.16 L937,272 L930.84,272.84 L930,279 L929.16,272.84 L923,272 L929.16,271.16 Z"/>
+  </g>
+</svg>
