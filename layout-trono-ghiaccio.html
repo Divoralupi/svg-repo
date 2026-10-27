@@ -1,0 +1,16 @@
+<!-- Layout "trono di ghiaccio": solo CSS2, senza position/left/top (rimossi da alcuni editor).
+     Cielo con luna e anello di Wyrdmark, castello di vetro, città, braci animate (SMIL), pannello con
+     cornice dorata, corona a corna di cervo e targa di Wyrdmark sono tutti nello sfondo SVG del contenitore.
+     Il testo viene spostato dentro il pannello con il padding del contenitore interno
+     (560x350 totali = 252+308 x 62+288). Il titolo occupa 24px + 14px di margine, così il divisore
+     dell'SVG (y=90) cade tra titolo e testo.
+     Nessun colore di sfondo sui contenitori, così gli angoli arrotondati restano trasparenti. -->
+<div style="width:560px;height:350px;margin:0 auto;background:url('https://raw.githubusercontent.com/Divoralupi/svg-repo/main/layout-trono-ghiaccio-sfondo.svg') no-repeat 0 0;">
+  <div style="width:308px;height:288px;padding:62px 0 0 252px;">
+    <div style="width:268px;height:236px;overflow:auto;font-family:Georgia, 'Times New Roman', serif;font-size:13px;line-height:1.55;color:#e4e8f0;text-align:left;">
+      <h2 style="margin:0 0 14px 0;padding:0;font-size:19px;line-height:24px;font-weight:bold;font-variant:small-caps;letter-spacing:2px;color:#f1d898;text-align:center;">Il Trono di Ghiaccio</h2>
+      <p style="margin:0 0 8px 0;">Squadra Holstein, see you soon</p>
+      <p style="margin:0;font-style:italic;color:#9fe8ff;">Che il fuoco ti guidi tra il vetro e il ghiaccio.</p>
+    </div>
+  </div>
+</div>
